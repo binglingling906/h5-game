@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔防游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>塔防游戏</h1>
+    <button id="startGame">开始游戏</button>
+    <p>金币: <span id="coins">100</span></p>
+    <div id="gameArea"></div>
+    <script src="game.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔防游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>塔防游戏</h1>
+    <button id="startGame">开始游戏</button>
+    <p>金币: <span id="coins">100</span></p>
+    <div id="gameArea"></div>
+    <script src="game.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔防游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 动态粒子背景 -->
+    <canvas id="particleCanvas"></canvas>
+
+    <h1>塔防游戏</h1>
+    
+    <!-- “开始游戏”按钮 -->
+    <button id="startGameBtn">开始游戏</button>
+
+    <!-- 游戏信息 -->
+    <div id="gameInfo">
+        <p>金币: <span id="coins">100</span></p>
+        <p>当前波次: <span id="wave">1</span></p>
+        <p>最高波次: <span id="maxWave">0</span></p>
+        <p>当前关卡: <span id="level">1</span></p>
+    </div>
+
+    <!-- 技能树 -->
+    <div id="skills">
+        <button class="skill-btn" onclick="upgradeAttackSpeed()">🔥 提高攻击速度 (50 金币)</button>
+        <button class="skill-btn" onclick="upgradeDamage()">⚔️ 增加攻击伤害 (75 金币)</button>
+        <button class="skill-btn" onclick="increaseIncome()">💰 提高金币收入 (100 金币)</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔防游戏</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="game.js"></script>
+</head>
+<body>
+    <h1>塔防游戏</h1>
+    <button id="startGame">开始游戏</button>  <!-- ✅ 添加开始游戏按钮 -->
+    
+    <div id="gameArea"></div>  <!-- 游戏区域 -->
+    
+    <script>
+        document.getElementById("startGame").addEventListener("click", function() {
+            console.log("游戏开始！");
+            startGame();
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔防游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas> <!-- 动态粒子背景 -->
+    <h1>塔防游戏</h1>
+    <p>点击空白区域放置防御塔</p>
+    <p>金币: <span id="coins">100</span></p>
+    <p>当前波次: <span id="wave">1</span></p>
+    <p>最高波次: <span id="highScore">0</span></p>
+    <p>当前关卡: <span id="level">1</span></p>
+    
+    <canvas id="gameCanvas"></canvas>
+
+    <h2>技能树</h2>
+    <button onclick="unlockSkill('fireRate')">🔥 提高攻击速度 (50 金币)</button>
+    <button onclick="unlockSkill('damage')">💥 增加攻击伤害 (75 金币)</button>
+    <button onclick="unlockSkill('income')">💰 提高金币收入 (100 金币)</button>
+    <p>已解锁技能: <span id="unlockedSkills"></span></p>
+
+    <button id="upgradeTower">升级最近的防御塔（50金币）</button>
+
+    <h2>排行榜</h2>
+    <p>你的名字: <input type="text" id="playerName" value="玩家" /></p>
+    <button id="submitScore">提交分数</button>
+    <ul id="leaderboard"></ul>
+
+    <script src="game.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔防游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>塔防游戏</h1>
+    <p>点击空白区域放置防御塔</p>
+    <p>金币: <span id="coins">100</span></p>
+    <p>当前波次: <span id="wave">1</span></p>
+    <p>最高波次: <span id="highScore">0</span></p>
+    <p>当前关卡: <span id="level">1</span></p>
+    
+    <canvas id="gameCanvas"></canvas>
+
+    <h2>技能树</h2>
+    <button onclick="unlockSkill('fireRate')">🔥 提高攻击速度 (50 金币)</button>
+    <button onclick="unlockSkill('damage')">💥 增加攻击伤害 (75 金币)</button>
+    <button onclick="unlockSkill('income')">💰 提高金币收入 (100 金币)</button>
+    <p>已解锁技能: <span id="unlockedSkills"></span></p>
+
+    <button id="upgradeTower">升级最近的防御塔（50金币）</button>
+
+    <h2>排行榜</h2>
+    <p>你的名字: <input type="text" id="playerName" value="玩家" /></p>
+    <button id="submitScore">提交分数</button>
+    <ul id="leaderboard"></ul>
+
+    <script src="game.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔防游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>塔防游戏</h1>
+    <canvas id="gameCanvas"></canvas>
+    <p>点击空白区域放置防御塔</p>
+    <script src="game.js"></script>
+</body>
+</html>

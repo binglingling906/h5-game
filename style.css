@@ -1,0 +1,177 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#gameArea {
+    width: 600px;
+    height: 400px;
+    background-color: darkgray;
+    margin: auto;
+    position: relative;
+    border: 2px solid white;
+}
+
+.tower {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+}#gameArea {
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    margin: auto;
+    position: relative;
+}
+
+.tower {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+}/* 通用样式 */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* 动态粒子背景 */
+#particleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* 按钮样式 */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#startGameBtn {
+    background: linear-gradient(45deg, #00f260, #0575e6);
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.skill-btn {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    margin: 10px;
+}body {
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+#gameArea {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    position: relative;
+}
+
+#startGame {
+    background: limegreen;
+    color: black;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+#particleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 让粒子背景在底层 */
+    pointer-events: none;
+}
+
+canvas {
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+h1, p {
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+button {
+    background: linear-gradient(45deg, #ff0080, #ff0040);
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(255, 0, 150, 0.8);
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+}body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+canvas {
+    background-color: #444;
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+canvas {
+    background-color: #444;
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+}
